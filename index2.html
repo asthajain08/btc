@@ -13,28 +13,31 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:200">
+  <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
     
     <!-- Style -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
 
     <title>Website Menu #7</title>
 
     
     <style>
-      .grid-img {
       
-      object-fit: cover;
-    }
     .carousel img {
       height: 100%;
     }
     .grid-item {
-      margin-bottom: 20px; /* Add desired margin between grid items */
+      margin-bottom: 2px; /* Add desired margin between grid items */
     }
     #bg-car {
-      background-color:#3586ff ;
-      margin-top: 50px;
+      /*background-image: linear-gradient(to bottom right, red, yellow);*/
+      background-color: #2a342a;
+  
     }
 
     @media (max-width: 576px) {
@@ -73,59 +76,22 @@
     }
     .custom-carousel-controls {
       position: absolute;
-      top: -30px;
+      top: -25px;
       left: 0;
       right: 0;
       display: flex;
       justify-content: center;
     }
 
-    /* Custom arrow styles */
-    #prev-control,#next-control {
-      background-color: gray;
-      color: white;
-      width: 25px;
-      height: 25px;
-      border-radius: 50%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      margin: 2px;
-      font-size: 1.5rem;
-      transition: background-color 0.3s ease;
-    }
-
-    /* Add hover effect for better visibility */
-    #prev-control:hover,
-    #next-control:hover {
-      background-color: darkgray;
-    }
-
-    /* Remove the default outline */
-    #prev-control:focus,
-    #next-control:focus {
-      outline: none;
-      box-shadow: none;
-    }
 
     /* Add hover effect for custom controls */
     .custom-control:hover {
       background-color: rgba(0, 0, 0, 0.6);
     }
-
-    /* Position the previous control */
-    #prev-control.custom-control {
-      left: 5px;
-    }
-
-    /* Position the next control */
-    #next-control.custom-control {
-      right: 5px;
-    }
     </style>
   </head>
   <body>
-    <div class="site-mobile-menu site-navbar-target">
+    <!-- <div class="site-mobile-menu site-navbar-target">
       <div class="site-mobile-menu-header">
         <div class="site-mobile-menu-close mt-3">
           <span class="icon-close2 js-menu-toggle"></span>
@@ -135,7 +101,7 @@
     </div> <!-- .site-mobile-menu -->
     
     
-    <div class="site-navbar-wrap">
+    <!-- <div class="site-navbar-wrap">
       <div class="site-navbar-top">
         <div class="container py-3">
           <div class="row align-items-center">
@@ -157,6 +123,7 @@
                 <a href="#" class="p-2 pl-0"><span class="icon-facebook"></span></a>
                 <a href="#" class="p-2 pl-0"><span class="icon-linkedin"></span></a>
                 <a href="#" class="p-2 pl-0"><span class="icon-instagram"></span></a>
+                <a href="#" class="p-2 pl-0"><span class="icon-youtube"></span></a>
               </div>
               
             </div>
@@ -178,7 +145,7 @@
                   <ul class="site-menu main-menu js-clone-nav d-none d-lg-block" >
                     <li class="active"><a href="#home-section" class="nav-link">Home</a></li>
                     <!--academics bar-->
-                    <li class="has-children">
+                   <!-- <li class="has-children">
                       <a href="#" class="nav-link">ACADEMICS</a>
                       <ul class="dropdown arrow-top">
                         <li><a href="#" class="nav-link">Courses</a></li>
@@ -188,7 +155,7 @@
                     </li>
 
                     <!--STUDENT LIFE-->
-                    <li class="has-children">
+                    <!--<li class="has-children">
                       <a href="#" class="nav-link">STUDENT LIFE</a>
                       <ul class="dropdown arrow-top">
                         <li><a href="#" class="nav-link">Facilites and infrastructure</a></li>
@@ -198,9 +165,9 @@
                     </li>
 
                     <!--affidavit-->
-                    <li><a href="#about-section" class="nav-link">AFFIDAVIT</a></li>
+                    <!--<li><a href="#about-section" class="nav-link">AFFIDAVIT</a></li>
                     <!--QUICK ACCESS-->
-                    <li class="has-children">
+                    <!--<li class="has-children">
                       <a href="#" class="nav-link">QUICK ACCESS</a>
                       <ul class="dropdown arrow-top">
                         <li><a href="#" class="nav-link">Attendance</a></li>
@@ -222,210 +189,107 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
     
+    <nav class="navbar fixed-top navbar-expand-lg navbar navbar-light"  style="background-color: white;">
+      <a class="navbar-brand" href="#">
+        <img src="tmu_logo.webp" alt="TMU Logo" style="width: 150px;height: 50px;">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li> 
+      
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownAcademics" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Academics
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownAcademics">
+                <a class="dropdown-item" href="#">Course</a>
+                <a class="dropdown-item" href="#">Syllabus</a>
+              </div>
+            </li>
+      
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownStudentLife" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Student Life
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownStudentLife">
+                <a class="dropdown-item" href="#">Facilities and infrastructure</a>
+                <a class="dropdown-item" href="#">Laboratories</a>
+                <a class="dropdown-item" href="#">Curricular Activities</a>
+              </div>
+            </li>
+      
+            <li class="nav-item">
+              <a class="nav-link" href="#">Affidavit</a>
+            </li>
+      
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact Us</a>
+            </li>
+      
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownQuickAccess" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Quick Access
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownQuickAccess">
+                <a class="dropdown-item" href="#">Attendance</a>
+                <a class="dropdown-item" href="#">Mandatory Disclosure</a>
+                <a class="dropdown-item" href="#">Student List</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      
+
 
     <div class="container-fluid p-0">
       <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel" data-interval="5000">
   
-        <!-- Controls -->
-        <a class="carousel-control-prev"  style="margin-top: 250px;" href="#carouselExampleSlidesOnly" role="button" data-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next" style="margin-top: 250px;" href="#carouselExampleSlidesOnly" role="button" data-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="sr-only">Next</span>
-        </a>
-  
         <div class="carousel-inner">
           <div class="carousel-item active tumble-in">
-            <img src="img/education_image1.webp" class="d-block w-100" alt="..." style="margin-top: 80px;">
+            <img src="img/tmimtbtc.jpg" class="d-block w-100" alt="..." style="margin-top: 75px;">
           </div>
           <div class="carousel-item">
-            <img src="img/banner1.jpg" class="d-block w-100" alt="..." style="margin-top: 80px;">
-          </div>
-          <div class="carousel-item">
-            <img src="img/banner2.jpg" class="d-block w-100" alt="..." style="margin-top: 80px;">
-          </div>
-          <div class="carousel-item">
-            <img src="img/banner3.jpg" class="d-block w-100" alt="..." style="margin-top: 80px;">
-          </div>
-          <div class="carousel-item">
-            <img src="img/banner4.jpg" class="d-block w-100" alt="..." style="margin-top: 80px;">
-          </div>
-          <div class="carousel-item">
-            <img src="img/banner5.jpg" class="d-block w-100" alt="..." style="margin-top: 80px;">
+            <img src="img/banner2.jpg" class="d-block w-100" alt="..." style="margin-top: 75px;">
           </div>
         </div>
       </div>
     </div>
     
-
+    <div style="text-align: center; margin-top: 40px;" >
+      <figure class="snip1578">
+        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/profile-sample6.jpg" alt="profile-sample6" />
+        <figcaption>
+          <h3>D.EL.Ed</h3>
+          <div class="icons"><button type="button" class="btn btn-warning btn-sm">View Details</button>
+          </div>
+        </figcaption>
+      </figure>
+      <figure class="snip1578 hover"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/profile-sample5.jpg" alt="profile-sample5" />
+        <figcaption>
+          <h3>B.Ed</h3>
+          <div class="icons"><button type="button" class="btn btn-warning btn-sm">View Details</button>
+          </div>
+        </figcaption>
+      </figure>
+      <figure class="snip1578"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/profile-sample4.jpg" alt="profile-sample4" />
+        <figcaption>
+          <h3>M.Ed</h3>
+          <div class="icons"><button type="button" class="btn btn-warning btn-sm" >View Details</button>
+          </div>
+        </figcaption>
+      </figure>
+    </div>
     
-    <section class="tile" style="margin-top: 50px; margin-bottom: 70px;">
-      <div class="container d-md-none d-lg-block">
-           <div class="row">
-                <div class="col-md-4 col-sm-4">
-                     <div class="card-hover">
-                          <div class="card-hover__content" style="height: 40%;">
-                               <h3 class="card-hover__title" style="height: 40%;">
-                                    Make your <span>choice</span> right now!
-                               </h3>
-                               <p class="card-hover__text" style="height: 40%;">Lorem ipsum, dolor sit amet
-                                    consectetur adipisicing elit.
-                                    Officia quisquam doloremque nostrum laboriosam, blanditiis libero corporis nulla
-                                    a aut?</p>
-                               <a href="#" class="card-hover__link" style="height: 40%;">
-                                    <span>Learn How</span>
-                                    <svg fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-                                         <path stroke-linecap="round" stroke-linejoin="round"
-                                              d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
-                                    </svg>
-                               </a>
-                          </div>
-                          <div class="card-hover__extra" style="height: 40%;">
-                               <h4>Learn <span>now</span> and get <span>40%</span> discount!</h4>
-                          </div>
-                          <img src="https://images.unsplash.com/photo-1586511925558-a4c6376fe65f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=60"
-                               alt="">
-                     </div>
-                </div>
-                <div class="col-md-4 col-sm-4">
-                     <div class="card-hover">
-                          <div class="card-hover__content" style="height: 40%;">
-                               <h3 class="card-hover__title" style="height: 40%;">
-                                    Make your <span>choice</span> right now!
-                               </h3>
-                               <p class="card-hover__text" style="height: 40%;">Lorem ipsum, dolor sit amet
-                                    consectetur adipisicing elit.
-                                    Officia quisquam doloremque nostrum laboriosam, blanditiis libero corporis nulla
-                                    a aut?</p>
-                               <a href="#" class="card-hover__link" style="height: 40%;">
-                                    <span>Learn How</span>
-                                    <svg fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-                                         <path stroke-linecap="round" stroke-linejoin="round"
-                                              d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
-                                    </svg>
-                               </a>
-                          </div>
-                          <div class="card-hover__extra" style="height: 40%;">
-                               <h4>Learn <span>now</span> and get <span>40%</span> discount!</h4>
-                          </div>
-                          <img src="https://images.unsplash.com/photo-1586511925558-a4c6376fe65f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=60"
-                               alt="">
-                     </div>
-                </div>
-                <div class="col-md-4 col-sm-4">
-                     <div class="card-hover">
-                          <div class="card-hover__content" style="height: 40%;">
-                               <h3 class="card-hover__title" style="height: 40%;">
-                                    Make your <span>choice</span> right now!
-                               </h3>
-                               <p class="card-hover__text" style="height: 40%;">Lorem ipsum, dolor sit amet
-                                    consectetur adipisicing elit.
-                                    Officia quisquam doloremque nostrum laboriosam, blanditiis libero corporis nulla
-                                    a aut?</p>
-                               <a href="#" class="card-hover__link" style="height: 40%;">
-                                    <span>Learn How</span>
-                                    <svg fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-                                         <path stroke-linecap="round" stroke-linejoin="round"
-                                              d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
-                                    </svg>
-                               </a>
-                          </div>
-                          <div class="card-hover__extra" style="height: 40%;">
-                               <h4>Learn <span>now</span> and get <span>40%</span> discount!</h4>
-                          </div>
-                          <img src="https://images.unsplash.com/photo-1586511925558-a4c6376fe65f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=60"
-                               alt="">
-                     </div>
-                </div>
-           </div>
-      </div>
-
-      <div class="container d-none d-md-block d-lg-none">
-        <div class="row">
-             <div class="col-md-5">
-                  <div class="card-hover">
-                       <div class="card-hover__content" style="height: 40%;">
-                            <h3 class="card-hover__title" style="height: 40%;">
-                                 Make your <span>choice</span> right now!
-                            </h3>
-                            <p class="card-hover__text" style="height: 40%;">Lorem ipsum, dolor sit amet
-                                 consectetur adipisicing elit.
-                                 Officia quisquam doloremque nostrum laboriosam, blanditiis libero corporis nulla
-                                 a aut?</p>
-                            <a href="#" class="card-hover__link" style="height: 40%;">
-                                 <span>Learn How</span>
-                                 <svg fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-                                      <path stroke-linecap="round" stroke-linejoin="round"
-                                           d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
-                                 </svg>
-                            </a>
-                       </div>
-                       <div class="card-hover__extra" style="height: 40%;">
-                            <h4>Learn <span>now</span> and get <span>40%</span> discount!</h4>
-                       </div>
-                       <img src="https://images.unsplash.com/photo-1586511925558-a4c6376fe65f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=60"
-                            alt="">
-                  </div>
-             </div>
-             <div class="col-md-2">&nbsp;</div>
-             <div class="col-md-5">
-                  <div class="card-hover">
-                       <div class="card-hover__content" style="height: 40%;">
-                            <h3 class="card-hover__title" style="height: 40%;">
-                                 Make your <span>choice</span> right now!
-                            </h3>
-                            <p class="card-hover__text" style="height: 40%;">Lorem ipsum, dolor sit amet
-                                 consectetur adipisicing elit.
-                                 Officia quisquam doloremque nostrum laboriosam, blanditiis libero corporis nulla
-                                 a aut?</p>
-                            <a href="#" class="card-hover__link" style="height: 40%;">
-                                 <span>Learn How</span>
-                                 <svg fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-                                      <path stroke-linecap="round" stroke-linejoin="round"
-                                           d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
-                                 </svg>
-                            </a>
-                       </div>
-                       <div class="card-hover__extra" style="height: 40%;">
-                            <h4>Learn <span>now</span> and get <span>40%</span> discount!</h4>
-                       </div>
-                       <img src="https://images.unsplash.com/photo-1586511925558-a4c6376fe65f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=60"
-                            alt="">
-                  </div>
-             </div>
-             <div class="col-md-12">
-                  <div class="card-hover">
-                       <div class="card-hover__content" style="height: 40%;">
-                            <h3 class="card-hover__title" style="height: 40%;">
-                                 Make your <span>choice</span> right now!
-                            </h3>
-                            <p class="card-hover__text" style="height: 40%;">Lorem ipsum, dolor sit amet
-                                 consectetur adipisicing elit.
-                                 Officia quisquam doloremque nostrum laboriosam, blanditiis libero corporis nulla
-                                 a aut?</p>
-                            <a href="#" class="card-hover__link" style="height: 40%;">
-                                 <span>Learn How</span>
-                                 <svg fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-                                      <path stroke-linecap="round" stroke-linejoin="round"
-                                           d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
-                                 </svg>
-                            </a>
-                       </div>
-                       <div class="card-hover__extra" style="height: 40%;">
-                            <h4>Learn <span>now</span> and get <span>40%</span> discount!</h4>
-                       </div>
-                       <img src="https://images.unsplash.com/photo-1586511925558-a4c6376fe65f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=60"
-                            alt="">
-                  </div>
-             </div>
-        </div>
-   </div>
- </section>
-
+    
 
 
     
@@ -443,11 +307,11 @@
         <div class="col-md-6 col-sm-6 mb-1 d-none d-sm-block">
           <div  style="border-left: 1px dotted black; padding-left: 20px; padding-right: 20px; margin-top: 10%; margin-bottom: 20%;">
             <p>
-              <span style="color: black; font-size: 19px;">
+              <span style="color: black; font-size: 14px;">
               The quality of Education system plays a major role in the development 
               of a country for which there is need of competent and versatile teachers.
               <br>The college of 
-              <span style="font-family: 'Sacramento', cursive; font-size: 24px; color: darkorange;">Faculty of Education</span>
+              <span style="font-family: 'Sacramento', cursive; font-size: 20px; color: darkorange;">Faculty of Education</span>
               has been established to nurture, motivate and empower a brigade of such
               teachers who will contribute to improve the standard of elementary Education.
               <br>
@@ -466,10 +330,10 @@
             </p>
           </div>
         </div>
-
+ 
         <div class="col-md-6 col-sm-6 mb-1 d-block d-sm-none">
                 <p>
-              <span style="color: black; font-size: 13px;">
+              <span style="color: black; ">
               The quality of Education system plays a major role in the development 
               of a country for which there is need of competent and versatile teachers.
               <br>The college of 
@@ -510,18 +374,18 @@
           
             <div class="carousel-inner" id="first">
               <div class="carousel-item active tumble-in" id="first-item">
+                <img src="img/convocation.jpg" class="d-block w-100"  alt="..." >
+              </div>
+              <!--<div class="carousel-item">
                 <img src="img/car.png" class="d-block w-100"  alt="..." >
               </div>
               <div class="carousel-item">
                 <img src="img/car.png" class="d-block w-100"  alt="..." >
-              </div>
-              <div class="carousel-item">
-                <img src="img/car.png" class="d-block w-100"  alt="..." >
-              </div>
+              </div>-->
             </div>
           </div>
         </div>
-        <div class="col-md-4 d-none d-sm-block" style="margin-top: 40px;">
+        <div class="col-md-4 d-none d-sm-block" style="margin-top: 32px;">
 
             <div id="myCarousel" class="carousel slide custom-carousel-container" data-ride="carousel" data-interval="4000">
               <!-- Indicators -->
@@ -537,22 +401,22 @@
                     <div class="row">
                       <div class="col-md-6 tumble-in">
                         <div class="card grid-item">
-                          <img src="img/gri.png" alt="Image 3" class="card-img-top grid-img" >
+                          <img src="img/grid1 (1).jpg" alt="Image 3" class="card-img-top grid-img" >
                         </div>
                       </div>
                       <div class="col-md-6 tumble-in">
                         <div class="card grid-item">
-                          <img src="img/gri.png" alt="Image 2" class="card-img-top grid-img" >
+                          <img src="img/grid1 (2).jpg" alt="Image 2" class="card-img-top grid-img" >
                         </div>
                       </div>
                       <div class="col-md-6 tumble-in">
                         <div class="card grid-item">
-                          <img src="img/gri.png" alt="Image 2" class="card-img-top grid-img" >
+                          <img src="img/grid1 (3).jpg" alt="Image 2" class="card-img-top grid-img" >
                         </div>
                       </div>
                       <div class="col-md-6 tumble-in">
                         <div class="card grid-item">
-                          <img src="img/gri.png" alt="Image 2" class="card-img-top grid-img" >
+                          <img src="img/grid1 (4).jpg" alt="Image 2" class="card-img-top grid-img" >
                         </div>
                       </div>
                     </div>
@@ -616,6 +480,7 @@
             class="carousel-item__img"
             src="img/1.jpg"
             alt="people"
+          
           />
         </div>
         <div class="carousel-item-placement">
@@ -699,5 +564,9 @@
     <script src="js/main.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.10.2/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.5.0/js/bootstrap.min.js"></script>
+
   </body>
 </html>
