@@ -547,12 +547,14 @@
 
 
 #fh5co-course ,
+#fh5co-course-categories,
 #fh5co-register{
   padding: 3em 0;
   clear: both;
 }
 @media screen and (max-width: 768px) {
   #fh5co-course,
+  #fh5co-course-categories,
   #fh5co-register {
     padding: 3em 0;
   }
@@ -633,7 +635,14 @@
   box-shadow: inset -70px 0px 77px 11px rgba(0, 0, 0, 0.74);
 }
 
-
+.desc{
+   font-family: "Source Sans Pro", Arial, sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 1.7;
+  color: #828282;
+  background: #fff;
+}
 
 #fh5co-register {
   background-size: cover;
@@ -749,4 +758,185 @@
   }
   
 
-  
+  .js .animate-box {
+    opacity: 0;
+  }
+
+
+.fh5co-heading h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  line-height: 1.5;
+  color: #000;
+  text-transform: uppercase;
+  position: relative;
+}
+.fh5co-heading h2:after {
+  position: absolute;
+  top: 40px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  content: '';
+  width: 50px;
+  height: 1px;
+  margin: 0 auto;
+  background: rgba(0, 0, 0, 0.08);
+}
+.fh5co-heading p {
+  font-size: 14px;
+}
+
+#fh5co-testimonial .fh5co-heading {
+  margin-bottom: 3em;
+}
+#fh5co-testimonial .fh5co-heading h2 {
+  color: #fff;
+  margin-bottom: 20px !important;
+}
+#fh5co-testimonial .fh5co-heading h2:after {
+  background: transparent !important;
+}
+#fh5co-testimonial .fh5co-heading p {
+  color: rgba(255, 255, 255, 0.5);
+}
+#fh5co-testimonial .fh5co-heading span {
+  padding: 7px 15px;
+  position: relative;
+}
+#fh5co-testimonial .fh5co-heading span:before {
+  position: absolute;
+  top: 24px;
+  left: -40px;
+  content: '';
+  width: 40px;
+  height: 1px;
+  background: white;
+}
+#fh5co-testimonial .fh5co-heading span:after {
+  position: absolute;
+  top: 24px;
+  right: -40px;
+  content: '';
+  width: 40px;
+  height: 1px;
+  background: white;
+}
+
+
+.services {
+  width: 95%;
+  margin: 0 auto;
+  margin-bottom: 40px;
+  position: relative;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+.services h3 {
+  font-size: 18px;
+  font-weight: 400;
+}
+.services h3 a {
+  color: #000;
+}
+.services .icon {
+  width: 90px;
+  height: 90px;
+  background: rgba(0, 0, 0, 0.04);
+  display: table;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  border-radius: 50%;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+@media screen and (max-width: 992px) {
+  .services .icon {
+    margin: 0 auto 30px auto;
+  }
+}
+.services .icon i {
+  display: table-cell;
+  vertical-align: middle;
+  font-size: 40px;
+  line-height: 40px;
+  color: #000;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+.services:hover .icon, .services:focus .icon {
+  background: #2D6CDF;
+}
+.services:hover .icon i, .services:focus .icon i {
+  color: #fff;
+}
+.fh5co-counters .icon i {
+  font-size: 45px;
+  color: #fff;
+}
+
+.course .desc, .course .course-img {
+  width: 50%;
+  display: inline-block;
+}
+@media screen and (max-width: 768px) {
+  .course .desc, .course .course-img {
+    width: 100%;
+  }
+}
+.course .course-img {
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  position: relative;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+@media screen and (max-width: 768px) {
+  .course .course-img {
+    height: 270px;
+  }
+}
+
+
+/* Define the slide-up animation */
+@keyframes slide-up {
+  from {
+    opacity: 0;
+    transform: translateY(80px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Apply the animation to the specified class */
+.slide-up {
+  animation: slide-up 2s ease-out;
+}
+
+
+  .animation-wrapper .col-md-4 {
+    opacity: 0; /* Set initial opacity to 0 to hide the elements before animation */
+    transform: translateX(-100%); /* Start the elements outside the viewport */
+    animation: slideInLeft 0.5s forwards; /* Apply the animation with 0.5 seconds duration */
+  }
+
+  /* Keyframes for the slide-in-left animation */
+  @keyframes slideInLeft {
+    to {
+      opacity: 1; /* At the end of the animation, set opacity to 1 to show the elements */
+      transform: translateX(0); /* Move the elements back to their original position */
+    }
+  }
+
+
