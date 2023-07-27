@@ -1,0 +1,516 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:400,600,700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="fonts/icomoon/style.css">
+
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:200">
+    <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+
+    <!-- Style -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+     <title>library</title>
+
+
+     <style>
+           .carousel-control-prev {
+            position: absolute;
+            top: 50%;
+            left: 2%;
+            z-index: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            opacity: 0.8;
+            transition: opacity 0.3s;
+            
+        }
+
+        .carousel-control-next {
+            position: absolute;
+            top: 50%;
+            right: 2%;
+            z-index: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            opacity: 0.8;
+            transition: opacity 0.3s;
+            
+        }
+
+        .carousel-control-next:hover,
+        .carousel-control-prev:hover {
+            opacity: 1;
+        }
+
+        .carousel-control-next i ,
+        .carousel-control-prev i{
+            font-size: 14px;
+            color: #333;
+        }
+
+        #bg-car {
+      /*background-image: linear-gradient(to bottom right, red, yellow);*/
+      background-color: #2a342a;
+  
+    }
+
+    @media (max-width: 576px) {
+      #bg-car{
+        margin-top: 90px;
+      }
+    }
+    @keyframes tumbleIn {
+      0% {
+        transform: translateY(-100%) rotateX(-90deg);
+        opacity: 0;
+      }
+      70% {
+        transform: rotateX(20deg);
+        opacity: 1;
+      }
+      100% {
+        transform: rotateX(0);
+      }
+    }
+    .tumble-in {
+      animation: tumbleIn 1s ease-in;
+    }
+
+    .counter{
+  color: #fff;
+  background: linear-gradient(to right bottom, #FFD81B, #f9b12a);
+  font-family: 'Dosis', sans-serif;
+  text-align: center;
+  width: 140px;
+  height: 150px;
+  padding: 40px 20px 20px;
+  margin: 10px auto 30px auto;
+  border-radius: 10px 10px 100px 100px;
+  box-shadow: 0 0 15px -5px rgba(0,0,0,0.3);
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+}
+.counter:after{
+  content: '';
+  background-color: #f9b12a;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+}
+.counter .counter-value{
+  font-size: 45px;
+  font-weight: 600;
+  line-height: 30px;
+  margin: 0 0 15px;
+  display: block;
+}
+.counter h3{
+  font-size: 13.7px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin: 0 0 20px;
+  
+}
+.counter.green{ background: linear-gradient(to right bottom, #a9dd23, #52C242); }
+.counter.green:after{ background: #52C242; }
+.counter.yellow{ background: linear-gradient(to right bottom, yellow, rgb(216, 216, 62)); }
+.counter.yellow:after{ background: rgb(216, 216, 62); }
+.counter.red{ background: linear-gradient(to right bottom,#f08080 , red); }
+.counter.red:after{ background: red; }
+.counter.purple{ background: linear-gradient(to right bottom, #ee82ee, purple); }
+.counter.purple:after{ background: purple; }
+.counter.cgreen{ background: linear-gradient(to right bottom, #01AD9F, #008888); }
+.counter.cgreen:after{ background: #008888; }
+.counter.blue{ background: linear-gradient(to right bottom, #00C5EF, #0092f4); }
+.counter.blue:after{ background: #0092f4; }
+
+     </style>
+</head>
+
+<body>
+     <nav class="navbar fixed-top navbar-expand-lg navbar navbar-light" style="background-color: white;">
+          <a class="navbar-brand" href="index.html">
+               <img src="tmu_logo.webp" alt="TMU Logo" style="width: 150px;height: 50px;">
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+               aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+               <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+               <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                         <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownAcademics" role="button"
+                              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              Academics
+                         </a>
+                         <div class="dropdown-menu" aria-labelledby="navbarDropdownAcademics">
+                              <a class="dropdown-item" href="courses.html">Course</a>
+                              <a class="dropdown-item" href="syllabus.html">Syllabus</a>
+                         </div>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownStudentLife" role="button"
+                              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              Student Life
+                         </a>
+                         <div class="dropdown-menu" aria-labelledby="navbarDropdownStudentLife">
+                              <a class="dropdown-item" href="Facilities and infrastructure.html">Facilities and
+                                   infrastructure</a>
+                              <a class="dropdown-item" href="#">Laboratories</a>
+                              <a class="dropdown-item" href="#">Curricular Activities</a>
+                         </div>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownQuickAccess" role="button"
+                              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              Quick Access
+                         </a>
+                         <div class="dropdown-menu" aria-labelledby="navbarDropdownQuickAccess">
+                              <a class="dropdown-item" href="#">Attendance</a>
+                              <a class="dropdown-item" href="#">Mandatory Disclosure</a>
+                              <a class="dropdown-item" href="#">Student List</a>
+                         </div>
+                    </li>
+                    <li class="nav-item">
+                         <a class="nav-link" href="#">Affidavit</a>
+                    </li>
+
+                    <li class="nav-item">
+                         <a class="nav-link" href="#">Contact Us</a>
+                    </li>
+
+
+               </ul>
+          </div>
+     </nav>
+
+
+     <section class="hero-wrap hero-wrap-2"
+          style="background-image: url('img/bg_1.jpg');margin: 0; padding: 0; margin-top: 75px;">
+          <div class="overlay"></div>
+          <div class="container" id="header">
+               <div class="row no-gutters slider-text align-items-center justify-content-center">
+                    <div class="col-md-9 ftco-animate text-center">
+                         <h1 class="mb-2 bread" style="margin: 0; padding: 0;">Hospital</h1>
+                         <p class="breadcrumbs">
+                              <span class="mr-2"><a href="index.html">Home <i class="fas fa-angle-right"></i></a></span>
+                              <span class="mr-2"><a href="Facilities and infrastructure.html"> Facilites & Infrastructure<i class="fas fa-angle-right"></i></a></span>
+                              <span>TMU Hospital <i class="fas fa-angle-right"></i></span>
+                         </p>
+                    </div>
+               </div>
+          </div>
+          </div>
+     </section>
+
+
+
+
+     <div class="container-fluid " id="welcometoclg" style="margin-bottom: 5%;">
+          <h1 id="welcome">Welcome to</h1>
+          <h1 id="welcome-text">HOSPITAL</h1>
+     </div>
+
+    <div class="container ">
+          <div class="row">
+               <div class="container-fluid" id="bg-car">
+               <div class="col-md-12 col-sm-12 mt-2 mb-1">
+                    <!-- Your carousel here -->
+                    <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel"
+                         data-interval="6000">
+                         <div class="carousel-inner" id="first">
+                              <div class="carousel-item active tumble-in" id="first-item">
+                                   <img src="img/hospital1.jpg" class="d-block w-100" alt="...">
+                              </div>
+                              <div class="carousel-item">
+                                   <img src="img/hospital2.jpg" class="d-block w-100" alt="...">
+                              </div>
+                              <div class="carousel-item">
+                                   <img src="img/hospital3.jpg" class="d-block w-100" alt="...">
+                              </div>
+                              <div class="carousel-item">
+                                   <img src="img/hospital4.jpg" class="d-block w-100" alt="...">
+                              </div>
+                              
+                         </div>
+                          <!-- Carousel controls -->
+                    <a class="carousel-control-prev" href="#carouselExampleSlidesOnly" role="button" data-slide="prev">
+                         <i class="fa fa-chevron-left"></i>
+                     </a>
+                     <a class="carousel-control-next" href="#carouselExampleSlidesOnly" role="button" data-slide="next">
+                         <i class="fa fa-chevron-right"></i>
+                     </a>
+                    </div>
+               </div>
+          </div>
+
+          <div class="col-md-12 col-sm-12 ">
+
+          <div class="container">
+               <div class="row " >
+                 <div class="col-md-3 col-sm-6">
+                   <div class="counter cgreen">
+                     <span class="counter-value">800</span>
+                     <h3>Bed Capacity</h3>
+                   </div>
+                 </div>
+                 <div class="col-md-3 col-sm-6">
+                   <div class="counter purple">
+                     <span class="counter-value">45</span>
+                     <h3>Emergency & Casualty Beds</h3>
+                   </div>
+                 </div>
+                 <div class="col-md-3 col-sm-6">
+                   <div class="counter orange">
+                     <span class="counter-value">75</span>
+                     <h3>ICUs Beds</h3>
+                   </div>
+                 </div>
+                 <div class="col-md-3 col-sm-6">
+                   <div class="counter red">
+                     <span class="counter-value">11</span>
+                     <h3>Modular Operation Theaters</h3>
+                   </div>
+                 </div>
+               </div> 
+               <div class="row">
+                 <div class="col-md-3 col-sm-4" >
+                   <div class="counter" >
+                     <span class="counter-value">20</span>
+                     <h3>Daily Average Surgeries</h3>
+                   </div>
+                 </div>
+                 <div class="col-md-3 col-sm-4">
+                   <div class="counter green">
+                     <span class="counter-value">20</span>
+                     <h3>Specialities</h3>
+                   </div>
+                 </div>
+                 <div class="col-md-3 col-sm-4">
+                   <div class="counter cgreen">
+                     <span class="counter-value">1200</span>
+                     <h3>Employees Including Doctors</h3>
+                   </div>
+                 </div>
+                 <div class="col-md-3 col-sm-4">
+                   <div class="counter blue">
+                     <span class="counter-value">16</span>
+                     <h3>Ventilators</h3>
+                   </div>
+                 </div>
+                 
+               </div> 
+             </div> 
+          </div>
+               <div class="col-md-12 col-sm-12   d-none d-sm-block">
+                    <!-- Your text snippet here -->
+                    <centre>
+                    <div
+                         style="padding-left: 20px; padding-right: 20px; margin-left: 10%; margin-bottom: 10%; margin-right: 10%; margin-top: 5%;">
+                         <p>
+                              
+                                   <span style="color: black; font-size: 14px;"></span>The <span
+                                   style="font-family: 'Sacramento', cursive; font-size: 20px; color: darkorange;">
+                                       
+                                   Teerthanker Mahaveer Medical College Hospital</span>  has widely 
+                                   expanded various clinical departments with a provision of super 
+                                   specialty care with growing spectrum of disease and increasing demand
+                                    of such facilities. The Hospital is the apex health institution and 
+                                    provides tertiary care to the entire population of Moradabad and
+                                     adjoining districts besides imparting clinical training to the
+                                      students.
+                                      <br>
+                                      The emergency wing is well equipped with modern facilities to 
+                                      provide the emergency and trauma care services round the clock on 
+                                      all the days. There are 5 beds in Triage area and 35 beds in
+                                       emergency ward. One emergency OT and one minor OT is located 
+                                       in emergency wing. The services include accident, trauma, medical
+                                        and surgical emergencies, paediatrics and Gynaecological emergencies.
+                                 
+                              </span>
+                         </p>
+                    </div>
+               </centre>
+               </div>
+               
+          </div>
+     </div>
+
+        <div class="col-md-12 col-sm-12 mb-1 d-block d-sm-none mb-5" >
+          <centre>
+               <div
+                    style="padding-left: 20px; padding-right: 20px; margin: 10%;">
+                    <p>
+                         
+                         <span style="color: black; font-size: 14px;"></span>The <span
+                         style="font-family: 'Sacramento', cursive; font-size: 20px; color: darkorange;">
+                             
+                         Teerthanker Mahaveer Medical College Hospital</span>  has widely 
+                         expanded various clinical departments with a provision of super 
+                         specialty care with growing spectrum of disease and increasing demand
+                          of such facilities. The Hospital is the apex health institution and 
+                          provides tertiary care to the entire population of Moradabad and
+                           adjoining districts besides imparting clinical training to the
+                            students.
+                            <br>
+                            The emergency wing is well equipped with modern facilities to 
+                            provide the emergency and trauma care services round the clock on 
+                            all the days. There are 5 beds in Triage area and 35 beds in
+                             emergency ward. One emergency OT and one minor OT is located 
+                             in emergency wing. The services include accident, trauma, medical
+                              and surgical emergencies, paediatrics and Gynaecological emergencies.
+                         </span>
+                    </p>
+               </div>
+          </centre>
+        </div>
+
+      </div>
+      
+      </div>
+      
+    </div>
+
+    
+
+
+     
+     <last>
+          <footer class="footer">
+               <div class="waves">
+                    <div class="wave" id="wave1"></div>
+                    <div class="wave" id="wave2"></div>
+                    <div class="wave" id="wave3"></div>
+                    <div class="wave" id="wave4"></div>
+               </div>
+               <ul class="social-icon">
+                    <li class="social-icon__item">
+                         <a class="social-icon__link" href="#">
+                              <ion-icon name="logo-facebook"></ion-icon>
+                         </a>
+                    </li>
+                    <li class="social-icon__item">
+                         <a class="social-icon__link" href="#">
+                              <ion-icon name="logo-twitter"></ion-icon>
+                         </a>
+                    </li>
+                    <li class="social-icon__item">
+                         <a class="social-icon__link" href="#">
+                              <ion-icon name="logo-linkedin"></ion-icon>
+                         </a>
+                    </li>
+                    <li class="social-icon__item">
+                         <a class="social-icon__link" href="#">
+                              <ion-icon name="logo-instagram"></ion-icon>
+                         </a>
+                    </li>
+               </ul>
+
+               <ul class="menu" style="display: flex; justify-content: space-between; width: 100%; margin: 10px 0;">
+                    <ul class="menu__item" style="flex: 1; text-align: center; "><a class="menu__link"
+                              href="#"><strong>Find Us</strong></a>
+                         <li class="menu__item" style="flex: 1; text-align: center;"><a class="menu__link" href="#"><i
+                                        class="fa fa-map-marker" style="font-size:30px"> </i> N.H.-9, Delhi Road,<br>
+                                   Moradabad 244001, Uttar Pradesh </a></li>
+                    </ul>
+                    <ul class="menu__item" style="flex: 1; text-align: center;"><a class="menu__link"
+                              href="#"><strong>Call Us</strong></a>
+                         <li class="menu__item" style="flex: 1; text-align: center;"><a class="menu__link" href="#"><i
+                                        class="fa fa-phone" style="font-size:30px"> </i> 1800-270-1490</a></li>
+                    </ul>
+                    <ul class="menu__item" style="flex: 1; text-align: center;"><a class="menu__link"
+                              href="#"><strong>Mail Us</strong></a>
+                         <li class="menu__item" style="flex: 1; text-align: center;"><a class="menu__link" href="#"><i
+                                        class="fa fa-envelope" style="font-size:30px"> </i> university@tmu.ac.in</a>
+                         </li>
+                    </ul>
+               </ul>
+
+
+               <ul class="menu">
+                    <li class="menu__item"><a class="menu__link" href="#">Home</a></li>
+                    <li class="menu__item"><a class="menu__link" href="#">Academics</a></li>
+                    <li class="menu__item"><a class="menu__link" href="#">Student Life</a></li>
+                    <li class="menu__item"><a class="menu__link" href="#">Affidavit</a></li>
+                    <li class="menu__item"><a class="menu__link" href="#">Quick Links</a></li>
+                    <li class="menu__item"><a class="menu__link" href="#">Contact Us</a></li>
+               </ul>
+               <p>&emsp;&emsp;&copy;Teerthanker Mahaveer University.| All Rights Reserved
+                    <br>NAAC | NIRF | Anti-Ragging | Privacy Policy | Disclaimer | Contact
+               </p>
+          </footer>
+     </last>
+     <script src="js/jquery-3.3.1.min.js"></script>
+     <script src="js/popper.min.js"></script>
+     <script src="js/bootstrap.min.js"></script>
+     <script src="js/jquery.sticky.js"></script>
+     <script src="js/main.js"></script>
+     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.10.2/umd/popper.min.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.5.0/js/bootstrap.min.js"></script>
+
+     <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+  <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+ 
+  <script>
+    $(document).ready(function() {
+      $('.counter-value').each(function() {
+        $(this).prop('Counter', 0).animate({
+          Counter: $(this).text()
+        }, {
+          duration: 3500,
+          easing: 'swing',
+          step: function(now) {
+            $(this).text(Math.ceil(now));
+          }
+        });
+      });
+    });
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,505 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+     <!-- Required meta tags -->
+     <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+     <link href="https://fonts.googleapis.com/css?family=Quicksand:400,600,700&display=swap" rel="stylesheet">
+
+     <link rel="stylesheet" href="fonts/icomoon/style.css">
+
+     <link rel="stylesheet" href="css/owl.carousel.min.css">
+
+     <!-- Bootstrap CSS -->
+     <link rel="stylesheet" href="css/bootstrap.min.css">
+     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:200">
+     <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+
+     <!-- Style -->
+     <link rel="stylesheet" href="css/style.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+     <style>
+           @import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat:wght@700&display=swap");
+
+:root {
+  /* Colors */
+  --brand-color: hsl(46, 100%, 50%);
+  --black: hsl(0, 0%, 0%);
+  --white: hsl(0, 0%, 100%);
+  /* Fonts */
+  --font-title: "Montserrat", sans-serif;
+  --font-text: "Lato", sans-serif;
+}
+
+/* RESET */
+
+/* Box sizing rules */
+
+/* Remove default margin */
+
+/* GLOBAL STYLES */
+.structure {
+  display: grid;
+  place-items: center;
+  margin-top: 60px;
+}
+
+.card__title {
+  font-size: 2.25rem;
+  font-family: var(--font-title);
+  color: var(--white);
+  line-height: 1.1;
+  margin: 0;
+}
+
+.card__description{
+  font-family: var(--font-text);
+  font-size: 1rem;
+  line-height: 1.5;
+  color: var(--white);
+  margin: 0;
+}
+
+.flow > * + * {
+  margin-top: var(--flow-space, 1em);
+}
+
+/* CARD COMPONENT */
+
+.card {
+  display: grid;
+  place-items: center;
+  width: 80vw;
+  max-width: 21.875rem;
+  height: 300px;
+  overflow: hidden;
+  border-radius: 0.625rem;
+  box-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.25);
+  flex: 0 0 calc(33% - 10px);
+}
+
+.cardrow {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 60px;
+ 
+}
+
+.card > * {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+}
+
+.card__background {
+  object-fit: cover;
+  max-width: 100%;
+  height: 100%;
+}
+
+.card__content {
+  --flow-space: 0.9375rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-self: flex-end;
+  height: 85%;
+  padding: 12% 1.25rem 1.875rem;
+  background: linear-gradient(
+    180deg,
+    hsla(0, 0%, 0%, 0) 0%,
+    hsla(0, 0%, 0%, 0.3) 10%,
+    hsl(0, 0%, 0%) 100%
+  );
+}
+
+.card__content--container {
+  --flow-space: 1.25rem;
+}
+
+.card__title {
+  position: relative;
+  width: fit-content;
+  width: -moz-fit-content; /* Prefijo necesario para Firefox  */
+}
+
+.card__title::after {
+  content: "";
+  position: absolute;
+  height: 0.3125rem;
+  width: calc(100% + 1.25rem);
+  bottom: calc((1.25rem - 0.5rem) * -1);
+  left: -1.25rem;
+  background-color: var(--brand-color);
+}
+
+.card__button {
+  padding: 0.75em 1.6em;
+  width: 100px;
+  height: 40px;
+  font-variant: small-caps;
+  font-weight: bold;
+  border-radius: 0.45em;
+  border: none;
+  background-color: var(--brand-color);
+  font-size:13.5px;
+  color: var(--black);
+}
+
+.card__button:focus {
+  outline: 2px solid black;
+  outline-offset: -5px;
+}
+
+@media (any-hover: hover) and (any-pointer: fine) {
+  .card__content {
+    transform: translateY(62%);
+    transition: transform 500ms ease-out;
+    transition-delay: 500ms;
+  }
+
+  .card__title::after {
+    opacity: 0;
+    transform: scaleX(0);
+    transition: opacity 1000ms ease-in, transform 500ms ease-out;
+    transition-delay: 500ms;
+    transform-origin: right;
+  }
+
+  .card__background {
+    transition: transform 500ms ease-in;
+  }
+
+  .card__content--container > :not(.card__title),
+  .card__button {
+    opacity: 0;
+    transition: transform 500ms ease-out, opacity 500ms ease-out;
+  }
+
+  .card:hover,
+  .card:focus-within {
+    transform: scale(1.05);
+    transition: transform 500ms ease-in;
+  }
+
+  .card:hover .card__content,
+  .card:focus-within .card__content {
+    transform: translateY(0);
+    transition: transform 500ms ease-in;
+  }
+
+  .card:focus-within .card__content {
+    transition-duration: 0ms;
+  }
+
+  .card:hover .card__background,
+  .card:focus-within .card__background {
+    transform: scale(1.3);
+  }
+
+  .card:hover .card__content--container > :not(.card__title),
+  .card:hover .card__button,
+  .card:focus-within .card__content--container > :not(.card__title),
+  .card:focus-within .card__button {
+    opacity: 1;
+    transition: opacity 500ms ease-in;
+    transition-delay: 1000ms;
+  }
+
+  .card:hover .card__title::after,
+  .card:focus-within .card__title::after {
+    opacity: 1;
+    transform: scaleX(1);
+    transform-origin: left;
+    transition: opacity 500ms ease-in, transform 500ms ease-in;
+    transition-delay: 500ms;
+  }
+}
+
+     </style>
+
+
+     <title>Syllabus</title>
+</head>
+<style>
+     *,
+     *::before,
+     *::after {
+          box-sizing: border-box;
+     }
+</style>
+
+<body>
+     <nav class="navbar fixed-top navbar-expand-lg navbar navbar-light" style="background-color: white;">
+          <a class="navbar-brand" href="index.html">
+               <img src="tmu_logo.webp" alt="TMU Logo" style="width: 150px;height: 50px;">
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+               aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+               <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+               <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                         <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownAcademics" role="button"
+                              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              Academics
+                         </a>
+                         <div class="dropdown-menu" aria-labelledby="navbarDropdownAcademics">
+                              <a class="dropdown-item" href="courses.html">Course</a>
+                              <a class="dropdown-item" href="syllabus.html">Syllabus</a>
+                         </div>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownStudentLife" role="button"
+                              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              Student Life
+                         </a>
+                         <div class="dropdown-menu" aria-labelledby="navbarDropdownStudentLife">
+                              <a class="dropdown-item" href="Facilities and infrastructure.html">Facilities and
+                                   infrastructure</a>
+                              <a class="dropdown-item" href="#">Laboratories</a>
+                              <a class="dropdown-item" href="#">Curricular Activities</a>
+                         </div>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownQuickAccess" role="button"
+                              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              Quick Access
+                         </a>
+                         <div class="dropdown-menu" aria-labelledby="navbarDropdownQuickAccess">
+                              <a class="dropdown-item" href="#">Attendance</a>
+                              <a class="dropdown-item" href="#">Mandatory Disclosure</a>
+                              <a class="dropdown-item" href="#">Student List</a>
+                         </div>
+                    </li>
+                    <li class="nav-item">
+                         <a class="nav-link" href="#">Affidavit</a>
+                    </li>
+
+                    <li class="nav-item">
+                         <a class="nav-link" href="#">Contact Us</a>
+                    </li>
+               </ul>
+          </div>
+     </nav>
+
+
+     <section class="hero-wrap hero-wrap-2"
+          style="background-image: url('img/bg_1.jpg');margin: 0; padding: 0; margin-top: 75px;">
+          <div class="overlay"></div>
+          <div class="container" id="header">
+               <div class="row no-gutters slider-text align-items-center justify-content-center">
+                    <div class="col-md-9 ftco-animate text-center">
+                         <h1 class="mb-2 bread" style="margin: 0; padding: 0;">Facilities and infrastructure</h1>
+                         <p class="breadcrumbs">
+                              <span class="mr-2"><a href="index.html">Home <i class="fas fa-angle-right"></i></a></span>
+                              <span>Facilities and infrastructure <i class="fas fa-angle-right"></i></span>
+                         </p>
+                    </div>
+               </div>
+          </div>
+          </div>
+     </section>
+
+
+     <div class="container-fluid" id="welcometoclg"  >
+          <h1 id="welcome">Welcome to</h1>
+          <h1 id="welcome-text">TMIMTBTC</h1>
+     </div>
+
+     <div class="structure">
+          <div class="row cardrow">
+               <article class="card">
+                    <img class="card__background" src="img/infra2.jpg"
+                         alt="Photo of Cartagena's cathedral at the background and some colonial style houses"
+                         width="1920" height="2193" />
+                    <div class="card__content | flow">
+                         <div class="card__content--container | flow">
+                              <h2 class="card__title">Library</h2>
+                              <p class="card__description">
+                                   In the heart of every library lies the key to infinite realms of knowledge, where imagination soars and dreams find their wings.
+                              </p>
+                         </div>
+                         <a href="library.html"><button class="card__button">Explore</button></a>
+                    </div>
+               </article>
+
+               <article class="card">
+                    <img class="card__background" src="img/infra4.jpg"
+                         alt="Photo of Cartagena's cathedral at the background and some colonial style houses"
+                         width="1920" height="2193" />
+                    <div class="card__content | flow">
+                         <div class="card__content--container | flow">
+                              <h2 class="card__title">Infrastructure</h2>
+                              <p class="card__description">
+                                   The heart of college lies in students and faculties,but the infrastructure serves as the backbone that nurtures growth, and shapes the future.
+                              </p>
+                         </div>
+                         <a href="infrastructure.html"><button class="card__button">Explore</button></a>
+                    </div>
+               </article>
+
+
+               <article class="card">
+                    <img class="card__background" src="img/infra1.jpg"
+                         alt="Photo of Cartagena's cathedral at the background and some colonial style houses"
+                         width="1920" height="2193" />
+                    <div class="card__content | flow">
+                         <div class="card__content--container | flow">
+                              <h2 class="card__title">Hospital</h2>
+                              <p class="card__description">
+                                   Where compassion meets expertise, TMU Hospital is dedicated to nurturing health and restoring hope for all.
+                              </p>
+                         </div>
+                         <a href="hospital.html"> <button class="card__button">Explore</button></a>
+                    </div>
+               </article>
+          </div>
+
+          <div class="row  cardrow">
+               <article class="card">
+                    <img class="card__background" src="img/infra3.jpg"
+                         alt="Photo of Cartagena's cathedral at the background and some colonial style houses"
+                         width="1920" height="2193" />
+                    <div class="card__content | flow">
+                         <div class="card__content--container | flow">
+                              <h2 class="card__title">Transport</h2>
+                              <p class="card__description">
+                                   Education is the passport to the future, and university transport is the vehicle that takes students on a journey towards knowledge and success.
+                              </p>
+                         </div>
+                         <a href="Transport.html"> <button class="card__button">Explore</button></a>
+                    </div>
+               </article>
+
+
+               <article class="card">
+                    <img class="card__background" src="img/infra5.jpg"
+                         alt="Photo of Cartagena's cathedral at the background and some colonial style houses"
+                         width="1920" height="2193" />
+                    <div class="card__content | flow">
+                         <div class="card__content--container | flow">
+                              <h2 class="card__title">Sports</h2>
+                              <p class="card__description">
+                                   Sports: Where passion meets perseverance, and champions are forged through sweat and determination.
+                              </p>
+                         </div>
+                         <a href="sports.html"><button class="card__button">Explore</button></a>
+                    </div>
+               </article>
+
+
+               <article class="card ">
+                    <img class="card__background" src="img/infra6.jpg"
+                         alt="Photo of Cartagena's cathedral at the background and some colonial style houses"
+                         width="1920" height="2193" />
+                    <div class="card__content | flow">
+                         <div class="card__content--container | flow">
+                              <h2 class="card__title">University</h2>
+                              <p class="card__description">
+                                   TMU - Where Knowledge Meets Innovation, and Dreams Take Flight.
+                              </p>
+                         </div>
+                         <a href="university.html"><button class="card__button">Explore</button></a>
+                    </div>
+               </article>
+          </div>
+     </div>
+
+
+
+     <last>
+          <footer class="footer">
+               <div class="waves">
+                    <div class="wave" id="wave1"></div>
+                    <div class="wave" id="wave2"></div>
+                    <div class="wave" id="wave3"></div>
+                    <div class="wave" id="wave4"></div>
+               </div>
+               <ul class="social-icon">
+                    <li class="social-icon__item">
+                         <a class="social-icon__link" href="#">
+                              <ion-icon name="logo-facebook"></ion-icon>
+                         </a>
+                    </li>
+                    <li class="social-icon__item">
+                         <a class="social-icon__link" href="#">
+                              <ion-icon name="logo-twitter"></ion-icon>
+                         </a>
+                    </li>
+                    <li class="social-icon__item">
+                         <a class="social-icon__link" href="#">
+                              <ion-icon name="logo-linkedin"></ion-icon>
+                         </a>
+                    </li>
+                    <li class="social-icon__item">
+                         <a class="social-icon__link" href="#">
+                              <ion-icon name="logo-instagram"></ion-icon>
+                         </a>
+                    </li>
+               </ul>
+
+               <ul class="menu" style="display: flex; justify-content: space-between; width: 100%; margin: 10px 0;">
+                    <ul class="menu__item" style="flex: 1; text-align: center; "><a class="menu__link"
+                              href="#"><strong>Find Us</strong></a>
+                         <li class="menu__item" style="flex: 1; text-align: center;"><a class="menu__link" href="#"><i
+                                        class="fa fa-map-marker" style="font-size:30px"> </i> N.H.-9, Delhi Road,<br>
+                                   Moradabad 244001, Uposition:relative;ttar Pradesh </a></li>
+                    </ul>
+                    <ul class="menu__item" style="flex: 1; text-align: center;"><a class="menu__link"
+                              href="#"><strong>Call Us</strong></a>
+                         <li class="menu__item" style="flex: 1; text-align: center;"><a class="menu__link" href="#"><i
+                                        class="fa fa-phone" style="font-size:30px"> </i> 1800-270-1490</a></li>
+                    </ul>
+                    <ul class="menu__item" style="flex: 1; text-align: center;"><a class="menu__link"
+                              href="#"><strong>Mail Us</strong></a>
+                         <li class="menu__item" style="flex: 1; text-align: center;"><a class="menu__link" href="#"><i
+                                        class="fa fa-envelope" style="font-size:30px"> </i> university@tmu.ac.in</a>
+                         </li>
+                    </ul>
+               </ul>
+
+
+               <ul class="menu">
+                    <li class="menu__item"><a class="menu__link" href="#">Home</a></li>
+                    <li class="menu__item"><a class="menu__link" href="#">Academics</a></li>
+                    <li class="menu__item"><a class="menu__link" href="#">Student Life</a></li>
+                    <li class="menu__item"><a class="menu__link" href="#">Affidavit</a></li>
+                    <li class="menu__item"><a class="menu__link" href="#">Quick Links</a></li>
+                    <li class="menu__item"><a class="menu__link" href="#">Contact Us</a></li>
+               </ul>
+               <p>&emsp;&emsp;&copy;Teerthanker Mahaveer University.| All Rights Reserved
+                    <br>NAAC | NIRF | Anti-Ragging | Privacy Policy | Disclaimer | Contact
+               </p>
+          </footer>
+     </last>
+     <script src="js/jquery-3.3.1.min.js"></script>
+     <script src="js/popper.min.js"></script>
+     <script src="js/bootstrap.min.js"></script>
+     <script src="js/jquery.sticky.js"></script>
+     <script src="js/main.js"></script>
+     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.10.2/umd/popper.min.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.5.0/js/bootstrap.min.js"></script>
+
+
+</body>
+
+</html>
