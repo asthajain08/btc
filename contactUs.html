@@ -1,0 +1,441 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+     <!-- Required meta tags -->
+     <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+     <link href="https://fonts.googleapis.com/css?family=Quicksand:400,600,700&display=swap" rel="stylesheet">
+
+     <link rel="stylesheet" href="fonts/icomoon/style.css">
+
+     <link rel="stylesheet" href="css/owl.carousel.min.css">
+
+     <!-- Bootstrap CSS -->
+     <link rel="stylesheet" href="css/bootstrap.min.css">
+     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:200">
+     <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+
+     <!-- Style -->
+     <link rel="stylesheet" href="css/style.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+     <title>Courses</title>
+     <style>
+        
+   .form-group {
+     margin-bottom: 15px;
+     font-size: 15px;
+   }
+   label {
+     display: block;
+     font-weight: bold;
+   }
+   input[type="text"],
+   input[type="email"],
+   input[type="tel"] {
+     width: 100%;
+     padding: 8px;
+     border: 1px solid #ccc;
+     border-radius: 4px;
+   }
+   select {
+     width: 100%;
+     padding: 8px;
+     border: 1px solid #ccc;
+     border-radius: 4px;
+   }
+   .captcha {
+     display: flex;
+     align-items: center;
+   }
+   img {
+     margin-right: 10px;
+   }
+   .submit-btn {
+     background-color: #4CAF50;
+     color: #fff;
+     border: none;
+     padding: 10px 20px;
+     font-size: 15px;
+     cursor: pointer;
+     border-radius: 4px;
+   }
+   .submit-btn:hover {
+     background-color: #45a049;
+   }
+     </style>
+</head>
+
+<body>
+     <nav class="navbar fixed-top navbar-expand-lg navbar navbar-light" style="background-color: white;">
+          <a class="navbar-brand" href="index.html">
+               <img src="tmu_logo.webp" alt="TMU Logo" style="width: 150px;height: 50px;">
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+               aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+               <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+               <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                         <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownAcademics" role="button"
+                              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              Academics
+                         </a>
+                         <div class="dropdown-menu" aria-labelledby="navbarDropdownAcademics">
+                              <a class="dropdown-item" href="courses.html">Course</a>
+                              <a class="dropdown-item" href="syllabus.html">Syllabus</a>
+                         </div>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownStudentLife" role="button"
+                              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              Student Life
+                         </a>
+                         <div class="dropdown-menu" aria-labelledby="navbarDropdownStudentLife">
+                              <a class="dropdown-item" href="Facilities and infrastructure.html">Facilities and
+                                   infrastructure</a>
+                              <a class="dropdown-item" href="laboratories.html">Laboratories</a>
+                              <a class="dropdown-item" href="activites.html">Curricular Activities</a>
+                         </div>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownQuickAccess" role="button"
+                              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              Quick Access
+                         </a>
+                         <div class="dropdown-menu" aria-labelledby="navbarDropdownQuickAccess">
+                              <a class="dropdown-item" href="http://portal1.tmu.ac.in/">Attendance</a>
+                               <a class="dropdown-item" href="disclosure.pdf">Mandatory Disclosure</a>
+                              <a class="dropdown-item" href="#">Student List</a>
+                         </div>
+                    </li>
+                    <li class="nav-item">
+                          <a class="nav-link" href="affidavit.pdf">Affidavit</a>
+                    </li>
+
+                    <li class="nav-item">
+                         <a class="nav-link" href="contactUs.html">Contact Us</a>
+                    </li>
+               </ul>
+          </div>
+     </nav>
+
+
+     <section class="hero-wrap hero-wrap-2"
+          style="background-image: url('img/bg_1.jpg');margin: 0; padding: 0; margin-top: 75px;">
+          <div class="overlay"></div>
+          <div class="container" id="header">
+               <div class="row no-gutters slider-text align-items-center justify-content-center">
+                    <div class="col-md-9 ftco-animate text-center">
+                         <h1 class="mb-2 bread" style="margin: 0; padding: 0;">Courses</h1>
+                         <p class="breadcrumbs">
+                              <span class="mr-2"><a href="index.html">Home <i class="fas fa-angle-right"></i></a></span>
+                              <span>Courses <i class="fas fa-angle-right"></i></span>
+                         </p>
+                    </div>
+               </div>
+          </div>
+          </div>
+     </section>
+
+
+
+
+
+     <div id="fh5co-course">
+          <div class="container">
+
+               <div class="row ">
+                    <div class="col-md-6 col-md-push-1 animate-box ">
+                         <div class="fh5co-contact-info">
+                              <span style="font-family: 'Sacramento', cursive; font-size: 20px; color: darkorange;">
+						<h3>Contact Information</h3>
+                              </span>
+						<ul>
+							<li ><i  class="fa fa-map" style="font-size: 30px;"></i>&emsp; N.H.-9, Delhi Road, <br> &emsp;&emsp;&emsp; Moradabad - 244001,<br> &emsp;&emsp;&emsp; Uttar Pradesh</li>
+							<li ><i  class="fa fa-phone" style="font-size: 30px;"></i><a href="tel://18002701490">&emsp;1800-270-1490</a></li>
+							<li ><i  class="fa fa-envelope" style="font-size: 30px;"></i><a href="mailto:admissions@tmu.ac.in">&emsp;admissions@tmu.ac.in</a></li>
+							
+						</ul>
+					</div>
+
+                    </div>
+
+                    <div class="col-md-6 animate-box ">
+                         <span style="font-family: 'Sacramento', cursive; font-size: 20px; color: darkorange;">
+                         <h4>Admissions Open 2023-24 Enquire Now</h4>
+                         </span>
+                         <form action="/sign_up" method="post">
+                           <div class="form-group">
+                             <label for="name">Name:</label>
+                             <input type="text" id="name" name="name" required>
+                           </div>
+                           <div class="form-row">
+                              <div class="col-md-6 mb-6">
+                             <label for="email">Email:</label>
+                             <input type="email" id="email" name="email" required>
+                           </div>
+                           
+                           <div class="col-md-6 mb-6">
+                             <label for="phone">Phone No.:</label>
+                             <input type="tel" id="phone" name="phone" required>
+                           </div>
+                         </div>
+                         
+                           <div class="form-row">
+                               <div class="col-md-6 mb-6">
+                             <label for="state">Select State:</label>
+                             <select id="state" name="state" required>
+                               <option value="" selected disabled>Select State</option>
+                               <option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option>
+                               <option value="Andhra Pradesh">Andhra Pradesh</option>
+                               <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+                               <option value="Assam">Assam</option>
+                               <option value="Chandigarh">Chandigarh</option>
+                               <option value="Bihar">Bihar</option>
+                               <option value="Dadra and Nagar Haveli and Daman and Diu">Dadra and Nagar Haveli and Daman and Diu</option>
+                               <option value="Chhattisgarh">Chhattisgarh</option>
+                               <option value="Delhi">Delhi</option>
+                               <option value="Goa">Goa</option>
+                               <option value="Gujarat">Gujarat</option>
+                               <option value="Haryana">Haryana</option>
+                               <option value="Himachal Pradesh">Himachal Pradesh</option>
+                               <option value="Jammu and Kashmir">Jammu and Kashmir</option>
+                               <option value="Jharkhand">Jharkhand</option>
+                               <option value="Karnataka">Karnataka</option>
+                               <option value="Kerala">Kerala</option>
+                               <option value="Ladakh">Ladakh</option>
+                               <option value="Madhya Pradesh">Madhya Pradesh</option>
+                               <option value="Maharashtra">Maharashtra</option>
+                               <option value="Manipur">Manipur</option>
+                               <option value="Meghalaya">Meghalaya</option>
+                               <option value="Mizoram">Mizoram</option>
+                               <option value="Nagaland">Nagaland</option>
+                               <option value="Odisha">Odisha</option>
+                               <option value="Puducherry">Puducherry</option>
+                               <option value="Punjab">Punjab</option>
+                               <option value="Rajasthan">Rajasthan</option>
+                               <option value="Sikkim">Sikkim</option>
+                               <option value="Tamil Nadu">Tamil Nadu</option>
+                               <option value="Telangana">Telangana</option>
+                               <option value="Tripura">Tripura</option>
+                               <option value="Uttar Pradesh">Uttar Pradesh</option>
+                               <option value="Uttarakhand">Uttarakhand</option>
+                               <option value="West Bengal">West Bengal</option>
+                               <!-- Add more state options here -->
+                             </select>
+                           </div>
+                               <div class="col-md-6 mb-6">
+                             <label for="city">Select City:</label>
+                             <select id="city" name="city" required>
+                               <option value="" selected disabled>Select City</option>
+                             </select>
+                           </div>
+                           </div>
+                         
+                           <div class="form-group">
+                             <label for="program">Program Type:</label>
+                             <select id="program" name="program" required>
+                               <option value="" selected disabled>Select Program </option>
+                               <option value="D.EL.Ed">D.EL.Ed</option>
+                               <option value="B.Ed">B.Ed</option>
+                               <option value="M.Ed">M.ed</option>
+                             </select>
+                           </div>
+                          
+                           <div class="form-group">
+                               <div class="form-check">
+                                 <input class="form-check-input is-invalid" type="checkbox" value="" id="invalidCheck3" required>
+                                 <label class="form-check-label" for="invalidCheck3">
+                                   Agree to terms and conditions
+                                 </label>
+                                 
+                               </div>
+                             </div>
+                     
+                           <button type="submit" class="submit-btn">Submit</button>
+                         </form>
+                       </div>
+                     
+                       
+                         
+               </div>
+          </div>
+     </div>
+
+
+
+
+     <div id="fh5co-register" style="background-image: url(img/img_bg_2.jpg);">
+          <div class="overlay"></div>
+          <div class="row" style=" display: flex; justify-content: center;align-items: center; ">
+               <div class="col-md-8 col-md-offset-2 animate-box">
+                    <div class="date-counter text-center">
+                         <h3>Eligibility- 50% in any graduation from any Indian recognized University.</h3>
+                         <br>
+                         <p><strong>Hurry Up!</strong></p>
+                         <p><a href="https://www.tmu.ac.in/tmu/admissions" class="btn btn-primary btn-lg btn-reg"
+                                   target="_blank">Apply Now!</a></p>
+                    </div>
+               </div>
+          </div>
+     </div>
+
+
+
+
+
+     <last>
+          <footer class="footer">
+               <div class="waves">
+                    <div class="wave" id="wave1"></div>
+                    <div class="wave" id="wave2"></div>
+                    <div class="wave" id="wave3"></div>
+                    <div class="wave" id="wave4"></div>
+               </div>
+               <ul class="social-icon">
+                    <li class="social-icon__item">
+                         <a class="social-icon__link" href="#">
+                              <ion-icon name="logo-facebook"></ion-icon>
+                         </a>
+                    </li>
+                    <li class="social-icon__item">
+                         <a class="social-icon__link" href="#">
+                              <ion-icon name="logo-twitter"></ion-icon>
+                         </a>
+                    </li>
+                    <li class="social-icon__item">
+                         <a class="social-icon__link" href="#">
+                              <ion-icon name="logo-linkedin"></ion-icon>
+                         </a>
+                    </li>
+                    <li class="social-icon__item">
+                         <a class="social-icon__link" href="#">
+                              <ion-icon name="logo-instagram"></ion-icon>
+                         </a>
+                    </li>
+               </ul>
+
+               <ul class="menu" style="display: flex; justify-content: space-between; width: 100%; margin: 10px 0;">
+                    <ul class="menu__item" style="flex: 1; text-align: center; "><a class="menu__link"
+                              href="#"><strong>Find Us</strong></a>
+                         <li class="menu__item" style="flex: 1; text-align: center;"><a class="menu__link" href="#"><i
+                                        class="fa fa-map-marker" style="font-size:30px"> </i> N.H.-9, Delhi Road,<br>
+                                   Moradabad 244001, Uposition:relative;ttar Pradesh </a></li>
+                    </ul>
+                    <ul class="menu__item" style="flex: 1; text-align: center;"><a class="menu__link"
+                              href="#"><strong>Call Us</strong></a>
+                         <li class="menu__item" style="flex: 1; text-align: center;"><a class="menu__link" href="#"><i
+                                        class="fa fa-phone" style="font-size:30px"> </i> 1800-270-1490</a></li>
+                    </ul>
+                    <ul class="menu__item" style="flex: 1; text-align: center;"><a class="menu__link"
+                              href="#"><strong>Mail Us</strong></a>
+                         <li class="menu__item" style="flex: 1; text-align: center;"><a class="menu__link" href="#"><i
+                                        class="fa fa-envelope" style="font-size:30px"> </i> university@tmu.ac.in</a>
+                         </li>
+                    </ul>
+               </ul>
+
+
+               <ul class="menu">
+                    <li class="menu__item"><a class="menu__link" href="#">Home</a></li>
+                    <li class="menu__item"><a class="menu__link" href="#">Academics</a></li>
+                    <li class="menu__item"><a class="menu__link" href="#">Student Life</a></li>
+                    <li class="menu__item"><a class="menu__link" href="#">Affidavit</a></li>
+                    <li class="menu__item"><a class="menu__link" href="#">Quick Links</a></li>
+                    <li class="menu__item"><a class="menu__link" href="#">Contact Us</a></li>
+               </ul>
+               <p>&emsp;&emsp;&copy;Teerthanker Mahaveer University.| All Rights Reserved
+                    <br>NAAC | NIRF | Anti-Ragging | Privacy Policy | Disclaimer | Contact
+               </p>
+          </footer>
+     </last>
+     <script src="js/jquery-3.3.1.min.js"></script>
+     <script src="js/popper.min.js"></script>
+     <script src="js/bootstrap.min.js"></script>
+     <script src="js/jquery.sticky.js"></script>
+     <script src="js/main.js"></script>
+     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.10.2/umd/popper.min.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.5.0/js/bootstrap.min.js"></script>
+     <script>
+                        
+          var cityOptions = {
+         'Andaman and Nicobar Islands': ['Select', 'Port Blair'],
+         'Andhra Pradesh': ['Select', 'Adoni', 'Amaravati', 'Anantapur', 'Chandragiri', 'Chittoor', 'Dowlaiswaram', 'Eluru', 'Guntur', 'Kadapa', 'Kakinada', 'Kurnool', 'Machilipatnam', 'Nagarjunakoṇḍa', 'Rajahmundry', 'Srikakulam', 'Tirupati', 'Vijayawada', 'Visakhapatnam', 'Vizianagaram', 'Yemmiganur'],
+         'Arunachal Pradesh': ['Select', 'Itanagar'],
+         'Assam': ['Select', 'Dhuburi', 'Dibrugarh', 'Dispur', 'Guwahati', 'Jorhat', 'Nagaon', 'Sivasagar', 'Silchar', 'Tezpur', 'Tinsukia'],
+         'Chandigarh': ['Select', 'Chandigarh'],
+         'Bihar': ['Select', 'Ara', 'Barauni', 'Begusarai', 'Bettiah', 'Bhagalpur', 'Bihar Sharif', 'Bodh Gaya', 'Buxar', 'Chapra', 'Darbhanga', 'Dehri', 'Dinapur Nizamat', 'Gaya', 'Hajipur', 'Jamalpur', 'Katihar', 'Madhubani', 'Motihari', 'Munger', 'Muzaffarpur', 'Patna', 'Purnia', 'Pusa', 'Saharsa', 'Samastipur', 'Sasaram', 'Sitamarhi', 'Siwan'],
+         'Dadra and Nagar Haveli and Daman and Diu': ['Select', 'Daman', 'Diu', 'Silvassa'],
+         'Chhattisgarh': ['Select', 'Ambikapur', 'Bhilai', 'Bilaspur', 'Dhamtari', 'Durg', 'Jagdalpur', 'Raipur', 'Rajnandgaon'],
+         'Delhi': ['Select', 'New Delhi'],
+         'Goa': ['Select', 'Madgaon', 'Panaji'],
+         'Gujarat': ['Select', 'Ahmadabad', 'Amreli', 'Bharuch', 'Bhavnagar', 'Bhuj', 'Dwarka', 'Gandhinagar', 'Godhra', 'Jamnagar', 'Junagadh', 'Kandla', 'Khambhat', 'Kheda', 'Mahesana', 'Morbi', 'Nadiad', 'Navsari', 'Okha', 'Palanpur', 'Patan', 'Porbandar', 'Rajkot', 'Surat', 'Surendranagar', 'Valsad', 'Veraval'],
+         'Haryana': ['Select', 'Ambala', 'Bhiwani', 'Chandigarh', 'Faridabad', 'Firozpur Jhirka', 'Gurugram', 'Hansi', 'Hisar', 'Jind', 'Kaithal', 'Karnal', 'Kurukshetra', 'Panipat', 'Pehowa', 'Rewari', 'Rohtak', 'Sirsa', 'Sonipat'],
+         'Himachal Pradesh': ['Select', 'Bilaspur', 'Chamba', 'Dalhousie', 'Dharmshala', 'Hamirpur', 'Kangra', 'Kullu', 'Mandi', 'Nahan', 'Shimla', 'Una'],
+         'Jammu and Kashmir': ['Select', 'Anantnag', 'Baramula', 'Doda', 'Gulmarg', 'Jammu', 'Kathua', 'Punch', 'Rajouri', 'Srinagar', 'Udhampur'],
+         'Jharkhand': ['Select', 'Bokaro', 'Chaibasa', 'Deoghar', 'Dhanbad', 'Dumka', 'Giridih', 'Hazaribag', 'Jamshedpur', 'Jharia', 'Rajmahal', 'Ranchi', 'Saraikela'],
+         'Karnataka': ['Select', 'Badami', 'Ballari', 'Bengaluru', 'Belagavi', 'Bhadravati', 'Bidar', 'Chikkamagaluru', 'Chitradurga', 'Davangere', 'Halebid', 'Hassan', 'Hubballi-Dharwad', 'Kalaburagi', 'Kolar', 'Madikeri', 'Mandya', 'Mangaluru', 'Mysuru', 'Raichur', 'Shivamogga', 'Shravanabelagola', 'Shrirangapattana', 'Tumakuru', 'Vijayapura'],
+         'Kerala': ['Select', 'Alappuzha', 'Vatakara', 'Idukki', 'Kannur', 'Kochi', 'Kollam', 'Kottayam', 'Kozhikode', 'Mattancheri', 'Palakkad', 'Thalassery', 'Thiruvananthapuram', 'Thrissur'],
+         'Ladakh': ['Select', 'Kargil', 'Leh'],
+         'Madhya Pradesh': ['Select', 'Balaghat', 'Barwani', 'Betul', 'Bharhut', 'Bhind', 'Bhojpur', 'Bhopal', 'Burhanpur', 'Chhatarpur', 'Chhindwara', 'Damoh', 'Datia', 'Dewas', 'Dhar', 'Dr. Ambedkar Nagar (Mhow)', 'Guna', 'Gwalior', 'Hoshangabad', 'Indore', 'Itarsi', 'Jabalpur', 'Jhabua', 'Khajuraho', 'Khandwa', 'Khargone', 'Maheshwar', 'Mandla', 'Mandsaur', 'Morena', 'Murwara', 'Narsimhapur', 'Narsinghgarh', 'Narwar', 'Neemuch', 'Nowgong', 'Orchha', 'Panna', 'Raisen', 'Rajgarh', 'Ratlam', 'Rewa', 'Sagar', 'Sarangpur', 'Satna', 'Sehore', 'Seoni', 'Shahdol', 'Shajapur', 'Sheopur', 'Shivpuri', 'Ujjain', 'Vidisha'],
+         'Maharashtra': ['Select', 'Ahmadnagar', 'Akola', 'Amravati', 'Aurangabad', 'Bhandara', 'Bhusawal', 'Bid', 'Buldhana', 'Chandrapur', 'Daulatabad', 'Dhule', 'Jalgaon', 'Kalyan', 'Karli', 'Kolhapur', 'Mahabaleshwar', 'Malegaon', 'Matheran', 'Mumbai', 'Nagpur', 'Nanded', 'Nashik', 'Osmanabad', 'Pandharpur', 'Parbhani', 'Pune', 'Ratnagiri', 'Sangli', 'Satara', 'Sevagram', 'Solapur', 'Thane', 'Ulhasnagar', 'Vasai-Virar', 'Wardha', 'Yavatmal'],
+         'Manipur': ['Select', 'Imphal'],
+         'Meghalaya': ['Select', 'Cherrapunji', 'Shillong'],
+         'Mizoram': ['Select', 'Aizawl', 'Lunglei'],
+         'Nagaland': ['Select', 'Kohima', 'Mon', 'Phek', 'Wokha', 'Zunheboto'],
+         'Odisha': ['Select', 'Balangir', 'Baleshwar', 'Baripada', 'Bhubaneshwar', 'Brahmapur', 'Cuttack', 'Dhenkanal', 'Kendujhar', 'Konark', 'Koraput', 'Paradip', 'Phulabani', 'Puri', 'Sambalpur', 'Udayagiri'],
+         'Puducherry': ['Select', 'Karaikal', 'Mahe', 'Puducherry', 'Yanam'],
+         'Punjab': ['Select', 'Amritsar', 'Batala', 'Chandigarh', 'Faridkot', 'Firozpur', 'Gurdaspur', 'Hoshiarpur', 'Jalandhar', 'Kapurthala', 'Ludhiana', 'Nabha', 'Patiala', 'Rupnagar', 'Sangrur'],
+         'Rajasthan': ['Select', 'Abu', 'Ajmer', 'Alwar', 'Amer', 'Barmer', 'Beawar', 'Bharatpur', 'Bhilwara', 'Bikaner', 'Bundi', 'Chittaurgarh', 'Churu', 'Dhaulpur', 'Dungarpur', 'Ganganagar', 'Hanumangarh', 'Jaipur', 'Jaisalmer', 'Jalor', 'Jhalawar', 'Jhunjhunu', 'Jodhpur', 'Kishangarh', 'Kota', 'Merta', 'Nagaur', 'Nathdwara', 'Pali', 'Phalodi', 'Pushkar', 'Sawai Madhopur', 'Shahpura', 'Sikar', 'Sirohi', 'Tonk', 'Udaipur'],
+         'Sikkim': ['Select', 'Gangtok', 'Gyalshing', 'Lachung', 'Mangan'],
+         'Tamil Nadu': ['Select', 'Arcot', 'Chengalpattu', 'Chennai', 'Chidambaram', 'Coimbatore', 'Cuddalore', 'Dharmapuri', 'Dindigul', 'Erode', 'Kanchipuram', 'Kanniyakumari', 'Kodaikanal', 'Kumbakonam', 'Madurai', 'Mamallapuram', 'Nagappattinam', 'Nagercoil', 'Palayamkottai', 'Pudukkottai', 'Rajapalayam', 'Ramanathapuram', 'Salem', 'Thanjavur', 'Tiruchchirappalli', 'Tirunelveli', 'Tiruppur', 'Thoothukudi', 'Udhagamandalam', 'Vellore'],
+         'Telangana': ['Select', 'Hyderabad', 'Karimnagar', 'Khammam', 'Mahbubnagar', 'Nizamabad', 'Sangareddi', 'Warangal'],
+         'Tripura': ['Select', 'Agartala'],
+         'Uttar Pradesh': ['Select', 'Agra', 'Aligarh', 'Amroha', 'Ayodhya', 'Azamgarh', 'Bahraich', 'Ballia', 'Banda', 'Bara Banki', 'Bareilly', 'Basti', 'Bijnor', 'Bithur', 'Budaun', 'Bulandshahr', 'Deoria', 'Etah', 'Etawah', 'Faizabad', 'Farrukhabad-cum-Fatehgarh', 'Fatehpur', 'Fatehpur Sikri', 'Ghaziabad', 'Ghazipur', 'Gonda', 'Gorakhpur', 'Hamirpur', 'Hardoi', 'Hathras', 'Jalaun', 'Jaunpur', 'Jhansi', 'Kannauj', 'Kanpur', 'Lakhimpur', 'Lalitpur', 'Lucknow', 'Mainpuri', 'Mathura', 'Meerut', 'Mirzapur-Vindhyachal', 'Moradabad', 'Muzaffarnagar', 'Partapgarh', 'Pilibhit', 'Prayagraj', 'Rae Bareli', 'Rampur', 'Saharanpur', 'Sambhal', 'Shahjahanpur', 'Sitapur', 'Sultanpur', 'Tehri', 'Varanasi'],
+         'Uttarakhand': ['Select', 'Almora', 'Dehra Dun', 'Haridwar', 'Mussoorie', 'Nainital', 'Pithoragarh'],
+         'West Bengal': ['Select','Alipore', 'Alipur Duar', 'Asansol', 'Baharampur', 'Bally', 'Balurghat', 'Bankura', 'Baranagar', 'Barasat', 'Barrackpore', 'Basirhat', 'Bhatpara', 'Bishnupur', 'Budge Budge','Burdwan', 'Chandernagore', 'Darjeeling', 'Diamond Harbour', 'Dum Dum', 'Durgapur', 'Halisahar', 'Haora', 'Hugli', 'Ingraj Bazar', 'Jalpaiguri', 'Kalimpong', 'Kamarhati', 'Kanchrapara', 'Kharagpur', 'Cooch Behar', 'Kolkata', 'Krishnanagar', 'Malda', 'Midnapore', 'Murshidabad', 'Nabadwip', 'Palashi', 'Panihati', 'Purulia', 'Raiganj', 'Santipur', 'Shantiniketan', 'Shrirampur', 'Siliguri', 'Siuri', 'Tamluk', 'Titagarh'],
+        
+          };
+            var stateDropdown = document.getElementById('state');
+            var cityDropdown = document.getElementById('city');
+        
+            // Function to populate the city dropdown based on the selected state
+            function populateCities() {
+              var selectedState = stateDropdown.value;
+              var cities = cityOptions[selectedState];
+              cityDropdown.innerHTML = '';
+              if (cities) {
+                for (var i = 0; i < cities.length; i++) {
+                  var option = document.createElement('option');
+                  option.value = cities[i];
+                  option.textContent = cities[i];
+                  cityDropdown.appendChild(option);
+                }
+              }
+            }
+        
+            // Event listener for state dropdown change
+            stateDropdown.addEventListener('change', populateCities);
+          </script>
+        
+</body>
+
+</html>
