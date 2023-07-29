@@ -77,14 +77,15 @@
 .card {
   display: grid;
   place-items: center;
-  width: 80vw;
+
   max-width: 21.875rem;
-  height: 300px;
+  
   overflow: hidden;
   border-radius: 0.625rem;
   box-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.25);
   flex: 0 0 calc(33% - 10px);
 }
+
 
 .cardrow {
   display: flex;
@@ -92,6 +93,27 @@
   margin-bottom: 60px;
  
 }
+
+@media (max-width: 576px) {
+    .cardrow {
+      flex-direction: column; /* Stack cards in a single column */
+    }
+  }
+
+  /* Add a media query for small (sm) view */
+  @media (min-width: 576px) and (max-width: 1400px) {
+     .cardrow {
+      flex-wrap: wrap; /* Allow cards to wrap into a new row */
+    }
+    .card {
+      flex: 0 0 calc(50% - 10px); /* Show two cards in a row */
+      margin-bottom: 20px;
+     
+      margin-left: 30px;
+      margin-right: 10px; /* Add some margin between cards */
+    }
+    
+  }
 
 .card > * {
   grid-column: 1 / 2;
