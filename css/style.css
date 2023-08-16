@@ -1,5 +1,7 @@
 *{
-  font-family: "Libre Baskerville", serif;
+  font-family: 'Roboto';
+  src: url('path-to-your-fonts/Roboto-Regular.ttf') format('truetype');
+
 }
       
       /* Custom arrow styles */
@@ -116,11 +118,12 @@
 
       .col-md-8,
       .col-sm-8 {
-        margin-bottom: 1rem;
         display: flex;
         justify-content: center;
         align-items: center;
         position: relative;
+      padding-left: 55px;
+      padding-right: 15px;
       }
       
     
@@ -184,7 +187,7 @@
         color: white;
         text-align: left;
         font-size: 16px;
-        background: #C63E04;
+        background: #004b40;
         border-radius: 5px;
       }
       
@@ -263,7 +266,7 @@
 
   .carousel-item-placement {
   
-    background-color: #2a342a;
+    background-color: #004b40;
     overflow: hidden;
     margin-right: 10px;
     display: inline-block;
@@ -367,13 +370,14 @@
 
 
 
-  
+   /* D8fff4, #004b40*/
 
+/*#2a342a*/
 
 .footer {
   position: relative;
   width: 100%;
-  background:#2a342a;
+  background:#004b40;
   padding: 20px 50px;
   display: flex;
   justify-content: center;
